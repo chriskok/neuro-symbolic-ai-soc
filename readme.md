@@ -20,6 +20,9 @@ The basic idea behind using NSAI for VQA is parsing the visual scene into a symb
 - Spacy
 - spacy-model-en_core_web_sm
 
+## Environment Setup
+- run `conda env create -f environment.yml`
+
 ## Usage
 - The Step-by-Step usage is in the [NSAI on Sort-of-CLEVR.ipynb](https://github.com/nerdimite/neuro-symbolic-ai-soc/blob/master/NSAI%20on%20Sort-of-CLEVR.ipynb) notebook from training the individual modules to plugging everything together to test it.
 - You can easily run this repository using Colab <a href="https://colab.research.google.com/github/nerdimite/neuro-symbolic-ai-soc/blob/master/NSAI%20on%20Sort-of-CLEVR.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a>
@@ -30,3 +33,6 @@ The basic idea behind using NSAI for VQA is parsing the visual scene into a symb
 - [The Neuro-Symbolic Concept Learner: Interpreting Scenes, Words, and Sentences From Natural Supervision](https://arxiv.org/abs/1904.12584)
 - [Seq2Seq Transformer](https://github.com/aladdinpersson/Machine-Learning-Collection/blob/master/ML/Pytorch/more_advanced/seq2seq_transformer/seq2seq_transformer.py)
 - [Object detection using dlib](https://www.learnopencv.com/training-a-custom-object-detector-with-dlib-making-gesture-controlled-applications/)
+
+## Dev Notes
+- when new libraries are installed, run `conda env export > environment.yml`
