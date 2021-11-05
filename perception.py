@@ -129,7 +129,7 @@ class PerceptionPipe():
         
         # Shape Classifier
         self.classifier = ShapeClassifier().to(device)
-        self.classifier.load_state_dict(torch.load(classifer_file))
+        self.classifier.load_state_dict(torch.load(classifer_file, map_location=torch.device('cpu')))
         self.device = device
         
         self.colors = np.array([[0,0,255], [0,255,0], [255,0,0], 

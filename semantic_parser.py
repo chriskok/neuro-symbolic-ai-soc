@@ -4,7 +4,7 @@ import pickle
 import os
 import torch
 from torch import nn
-from torchtext.data import Field, TabularDataset, BucketIterator
+from torchtext.legacy.data import Field, TabularDataset, BucketIterator
 import spacy
 from tqdm.notebook import tqdm
 
@@ -203,7 +203,7 @@ class SemanticParser():
         
         # Load Model
         self.model = Seq2Seq(config, device)
-        self.model.load_state_dict(torch.load(filename))
+        self.model.load_state_dict(torch.load(filename, map_location=torch.device('cpu')))
         
         
     def predict(self, query):

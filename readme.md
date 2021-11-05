@@ -14,6 +14,11 @@ The basic idea behind using NSAI for VQA is parsing the visual scene into a symb
 - Scikit Learn
 - Pandas
 - Numpy
+- Scikit-image
+- Torchtext
+- Tqdm
+- Spacy
+- spacy-model-en_core_web_sm
 
 ## Usage
 - The Step-by-Step usage is in the [NSAI on Sort-of-CLEVR.ipynb](https://github.com/nerdimite/neuro-symbolic-ai-soc/blob/master/NSAI%20on%20Sort-of-CLEVR.ipynb) notebook from training the individual modules to plugging everything together to test it.
